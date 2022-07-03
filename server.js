@@ -10,7 +10,7 @@ require('./prod')(app)
 
 app.use(express.json());
 app.use(cors());
-const port = 4000;
+const port = process.env.PORT || 4000;
 const uri = process.env.SIGNUP_URI;
 
 mongoose
